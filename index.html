@@ -28,9 +28,15 @@
                 The Topic page explains what human rights are and how the UN works to protect them. The Resources page links to official organizations where you can learn more or get involved.
             </p>
         </section>
-        <section>
+       <section>
     <h2>Reflection</h2>
-    <p><a href="reflection-2.pdf" target="_blank">Read my reflection (PDF)</a></p>
+    <ol>
+        <li>The biggest issue was the navigation and the cards. The nav links were inline-block with a 24px margin, so on a phone they got cramped, and the 80% wide cards left awkward empty space.</li>
+        <li>I added a centered container for the header, main, and footer with a max-width of 960px, and kept box-sizing: border-box. For images I used max-width: 100% and height: auto. Then I wrote a media query at 600px that stacks the nav links and makes the cards 100% wide.</li>
+        <li>On wide screens the content stays in a centered column. On narrow screens everything goes into one column, the links stack, and I didn't need to scroll sideways.</li>
+        <li>I learned that a page can look fine on my laptop and still feel off on a phone. Testing at 1280, 768, and 390 showed me things I wouldn't have noticed otherwise.</li>
+        <li>Next I'd add a second media query for tablets around 768px, and maybe a collapsible menu for the nav. I'm not totally sure what the best breakpoint is yet.</li>
+    </ol>
 </section>
     </main>
     <footer> 
