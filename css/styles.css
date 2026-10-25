@@ -5,10 +5,10 @@ p {margin-bottom:1em;}
  a{color: #003333; text-decoration: underline;}
 a:hover{color: #003333; text-decoration: none; background-color: #B0E6E6;}
 .highlight {background-color: #B0E6E6; padding: 8px}
-.note{font-style:italic; border-left: 4px solid #237B7B; padding-left:10px;}
+.note{font-style:italic; border-left: 4px solid #237B7B; padding-left:10px;color:#333;}
 .feature{color:#333;font-size:18px}
 #main-content{
-    padding:20px
+    padding:20px;
 }
 nav a{
     font-weight:bold;
@@ -31,6 +31,8 @@ nav a{
     }
     img{
         margin:15px 0; max-width:100%;
+     height:auto;
+     display:block;
     }
     *{
         box-sizing: border-box;
@@ -38,6 +40,35 @@ nav a{
     p{
         color :#222;
     }
-    .note{
-        color:#333
+    header, main, footer{
+    max-width:960px;
+    margin:0 auto;
+    padding:0 20px;
+}
+
+nav ul{
+    padding:0;
+}
+
+footer{
+    margin-top:40px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+@media (max-width:600px){
+    header, main, footer{
+        padding:0 12px;
     }
+    nav li{
+        display:block;
+        margin:0 0 10px 0;
+    }
+    .card{
+        width:100%;
+        padding:15px;
+    }
+    section{
+        margin-bottom:24px;
+    }
+}
